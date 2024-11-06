@@ -1,0 +1,140 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with background */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bgimage.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main heading style */
+h1 {
+    color: #0b141e;
+    font-family: Georgia, 'Algeria', Times, serif;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(251, 232, 255, 0.8);
+    width: 100%;
+    text-shadow:
+        2px 2px 0 #c9da10, 
+        -2px 2px 0 #c9da10, 
+        2px -2px 0 #c9da10, 
+        -2px -2px 0 #c9da10; 
+}
+
+/* Search Container styling */
+.search-container {
+    background-color: rgba(216, 214, 249, 0.8);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search section styling */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.search-section input,
+.search-section button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.search-section input {
+    width: 70%;
+    border: 2px solid #0056b3;
+    outline: none;
+}
+
+.search-section button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Information Container styling */
+.info-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.info-container.show {
+    display: block;
+    opacity: 1;
+}
+
+.protein-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.protein-info {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+    background-color: rgba(251, 232, 255, 0.8);
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .search-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-section input {
+        width: 100%;
+    }
+}

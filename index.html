@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Insight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Protein Insight</h1>
+
+    <!-- Search Container -->
+    <div class="search-container">
+        <div class="search-section">
+            <input type="text" id="proteinSearch" placeholder="Enter Protein Name or ID" onkeypress="checkEnter(event)">
+            <button onclick="searchProtein()">Search</button>
+        </div>
+    </div>
+
+    <!-- Information Container -->
+    <div class="info-container" id="proteinInfo">
+        <p class="protein-title">Protein Information</p>
+        <p id="proteinDetails">Details about the protein will appear here.</p>
+    </div>
+
+    <footer>
+        <p>&copy; Protein Database</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
